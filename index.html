@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:wdth,wght@62.5..100,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./docs/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="welcome">
+            <header class="header">
+                <div class="header__logo svg">
+                    <img src="./img/svg/logo.svg" alt="Logo">
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__ul" id="headerUl">
+                        <li class="header__li"><a href="/" class="header__a">главная</a></li>
+                        <li class="header__li"><a href="#menu" class="header__a">меню</a></li>
+                        <li class="header__li"><a href="#footer" class="header__a">контакты</a></li>
+                        <li class="header__li"><a href="#gallery" class="header__a">галлерея</a></li>
+                        <span class="material-icons icon-close" onclick="navToggle()">close</span>
+                    </ul>
+                    <span class="header__backdrop" onclick="navToggle()"></span>
+                    <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+                </nav>
+                <div class="header__contacts">
+                    <a href="tel:+380 (98) 765 43 21"><img src="./img/svg/phone.svg" alt="Phone"
+                            class="header__contacts-phoneSvg svg"></a>
+                    <p class="header__contacts-phone">+380 (98) 765 43 21</p>
+                    <div class="header__contacts-icons">
+                        <a href="/"><img src="./img/svg/instagram.svg" alt="Instagram"
+                                class="header__contacts-icons__svg svg"></a>
+                        <a href="/"><img src="./img/svg/facebook.svg" alt="Facebook"
+                                class="header__contacts-icons__svg svg"></a>
+                        <a href="/"><img src="./img/svg/twitter.svg" alt="Twitter"
+                                class="header__contacts-icons__svg svg"></a>
+                    </div>
+                </div>
+
+            </header>
+            <h1 class="welcome-title">Попробуй лучшую <span>грузинскую</span> кухню<span>.</span></h1>
+            <p class="welcome-info">В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным рецептам
+                грузинской кухни. Потрясающий вкус блюд перенесет Вас к атмосферу невероятного Тбилисси не выходя из
+                дома.
+            </p>
+            <a href="/" class="welcome-btn">ПЕРЕЙТИ К МЕНЮ</a>
+        </section>
+
+
+        <footer class="footer" id="footer">
+            <div class="footer-sections">
+                <img src="../../img/svg/logo.svg" alt="Logo" class="footer-sections__logo icons">
+                <span class="footer-span"></span>
+                <div class="footer-sections__icons">
+                    <a href="tel:+380 (98) 765 43 21" class="footer-sections__icons-phone">+380 (98) 765 43 21</a>
+                    <div class="footer-sections__icons-icon">
+                        <a href="/"><img src="../../img/svg/telegram.svg" alt="Telegram" class="icons"></a>
+                        <a href="/"><img src="../../img/svg/viber-mob.svg" alt="Viber" class="icons"></a>
+                        <a href="/"><img src="../../img/svg/whatsapp.svg" alt="Whatsapp" class="icons"></a>
+                    </div>
+                </div>
+                <span class="footer-span"></span>
+                <p class="footer-sections__address">г. Киев, станция метро “Крещатик”</p>
+                <span class="footer-span"></span>
+                <a href="mailto:mail@mal.ua" class="footer-sections__email">Email: mail@mal.ua</a>
+            </div>
+            <div class="footer-bloks">
+                <div class="footer-bloks__txt">
+                    <p class="footer-bloks__txt-desc">Политика конфиденциальности</p>
+                    <p class="footer-bloks__txt-info">Пользовательское соглашение</p>
+                </div>
+                <p class="footer-bloks__text">Динамо. Грузинское бистро. Все права защищены, <span
+                        id="copyright"></span></p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

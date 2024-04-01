@@ -1,0 +1,59 @@
+.footer {
+  padding: 37px 80px 33px 100px;
+  background: black;
+  &-sections {
+    @include f-s-c;
+    margin-bottom: 37px;
+    &__icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &-phone {
+        font: var(--txt-700-21-sf);
+        color: var(--c-text-white);
+        white-space: nowrap;
+      }
+      &-icon {
+        display: flex;
+        gap: 10px;
+      }
+    }
+    &__address,
+    &__email {
+      max-width: 240px;
+      font: var(--txt-400-14-sf);
+      color: var(--c-text-white);
+    }
+  }
+  &-bloks {
+    @include f-s-c;
+    &__txt {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      &-desc,
+      &-info {
+        font: var(--txt-400-12-sf);
+        color: var(--c-color-txt);
+      }
+    }
+    &__text {
+      font: var(--txt-400-12-sf);
+      color: var(--c-color-txt);
+      padding-right: 20px;
+    }
+  }
+  &-span {
+    width: 1px;
+    max-height: 70px;
+    height: 100vh;
+    background: var(--c-background-span);
+    margin: 0 10px;
+  }
+  .icons {
+    transition: var(--transition);
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}

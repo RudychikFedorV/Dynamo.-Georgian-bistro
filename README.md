@@ -1,1 +1,1 @@
-[Dynamo.-Georgian-bistro](https://rudychikfedorv.github.io/Dynamo.-Georgian-bistro/#footer)
+[Dynamo.-Georgian-bistro](https://rudychikfedorv.github.io/Dynamo.-Georgian-bistro/)

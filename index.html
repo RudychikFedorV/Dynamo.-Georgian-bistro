@@ -54,8 +54,47 @@
             </p>
             <a href="/" class="welcome-btn">ПЕРЕЙТИ К МЕНЮ</a>
         </section>
+        <section class="menu" id="menu">
+            <h1 class="menu-title">Меню</h1>
+            <p class="menu-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna
+                hendrerit convallis aliquam consequat turpis.
+            </p>
+            <div class="menu-blocks">
+            </div>
+        </section>
 
-
+        <section class="gallery" id="gallery">
+            <h1 class="gallery-title">Галлерея</h1>
+            <p class="gallery-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna
+                hendrerit
+                convallis aliquam consequat turpis.
+            </p>
+            <!-- <span class="gallery-layer">
+                <img src="./img/layer-3-1.png" alt="Layer">
+            </span> -->
+            <div class="gallery-sections">
+                <img src="./img/gal1.png" alt="Галлерея" class="gallery-sections__img"
+                    onclick="openModal('./img/gal1.png')">
+                <img src="./img/gal2.png" alt="Галлерея" class="gallery-sections__img"
+                    onclick="openModal('./img/gal2.png')">
+                <img src="./img/gal3.png" alt="Галлерея" class="gallery-sections__img"
+                    onclick="openModal('./img/gal3.png')">
+                <img src="./img/gal4.png" alt="Галлерея" class="gallery-sections__img"
+                    onclick="openModal('./img/gal4.png')">
+                <img src="./img/gal5.png" alt="Галлерея" class="gallery-sections__img"
+                    onclick="openModal('./img/gal5.png')">
+                <img src="./img/gal6.png" alt="Галлерея" class="gallery-sections__img"
+                    onclick="openModal('./img/gal6.png')">
+                <img src="./img/gal7.png" alt="Галлерея" class="gallery-sections__img"
+                    onclick="openModal('./img/gal7.png')">
+                <img src="./img/gal8.png" alt="Галлерея" class="gallery-sections__img"
+                    onclick="openModal('./img/gal8.png')">
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img src="" id="modalImg" class="modal-content">
+            </div>
+        </section>
         <footer class="footer" id="footer">
             <div class="footer-sections">
                 <img src="./img/svg/logo.svg" alt="Logo" class="footer-sections__logo icons">

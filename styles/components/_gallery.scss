@@ -29,14 +29,17 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     @include tablet-small {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @include mobile-small {
-      grid-template-columns: 1fr;
+      display: none;
     }
     &-img {
       max-width: 358px;
       max-height: 269px;
+    }
+  }
+  .carousel-img {
+    display: none;
+    @include tablet-small {
+      display: block;
     }
   }
 }

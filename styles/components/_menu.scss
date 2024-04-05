@@ -2,12 +2,13 @@
   // background: url(../img/white-black.png);
   background: var(--c-text-black);
   padding-top: 50px;
+  padding-bottom: 140px;
 
   &-title {
     text-align: center;
     font: var(--txt-900-48-ff);
     color: var(--c-text-white);
-    margin-bottom: 25px;    
+    margin-bottom: 25px;
   }
   &-txt {
     max-width: 580px;
@@ -23,6 +24,10 @@
       width: 100%;
       max-width: 288px;
       max-height: 508px;
+      transition: var(--transition);
+      &:hover .button {
+        display: block;
+      }
       @include mobile {
         display: block;
         max-width: 355px;
@@ -42,9 +47,8 @@
       &-btn {
         position: absolute;
         bottom: 50%;
-        transform: translateY(-50%);
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
         font: var(--txt-900-14-ff);
         text-transform: uppercase;
         color: var(--c-text-white);
@@ -53,6 +57,7 @@
         border-radius: 5px;
         background: var(--c-background-btn);
         white-space: nowrap;
+        display: none;
       }
     }
     .swiper {

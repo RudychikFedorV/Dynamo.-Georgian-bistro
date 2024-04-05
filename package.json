@@ -4,7 +4,7 @@
   "description": "langing page",
   "source": "index.html",
   "scripts": {
-    "sass:watch": "sass --style=compressed --watch styles:docs",
+    "sass": "sass --style=compressed --watch styles:docs",
     "parcel:watch": "parcel serve --dist-dir public",
     "parcel:build": "parcel build --dist-dir build --public-url ./"
   },

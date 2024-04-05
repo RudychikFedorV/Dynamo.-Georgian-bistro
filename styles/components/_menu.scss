@@ -7,10 +7,10 @@
     text-align: center;
     font: var(--txt-900-48-ff);
     color: var(--c-text-white);
-    margin-bottom: 25px;
+    margin-bottom: 25px;    
   }
   &-txt {
-    max-width: 632px;
+    max-width: 580px;
     font: var(--txt-400-16-ff);
     text-align: center;
     margin-inline: auto;
@@ -18,12 +18,16 @@
     margin-bottom: 62.5px;
   }
   &-blocks {
-    display: flex;
     &__block {
       position: relative;
       width: 100%;
       max-width: 288px;
       max-height: 508px;
+      @include mobile {
+        display: block;
+        max-width: 355px;
+        max-height: 300px;
+      }
 
       &-name {
         font: var(--txt-600-24-ff);
@@ -39,12 +43,57 @@
         position: absolute;
         bottom: 50%;
         transform: translateY(-50%);
-        left: 10%;
-        right: 10%;
+        left: 50%;
+        transform: translateX(-50%);
         font: var(--txt-900-14-ff);
         text-transform: uppercase;
         color: var(--c-text-white);
-        padding: 21px 55px;
+        padding: 20px 50px;
+        border: 2px solid var(--c-color-border);
+        border-radius: 5px;
+        background: var(--c-background-btn);
+        white-space: nowrap;
+      }
+    }
+    .swiper {
+      z-index: 0;
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+  &-blocksMobile {
+    display: none;
+    @include mobile {
+      display: block;
+      @include f-c-c-column;
+      row-gap: 10px;
+    }
+    &__block {
+      position: relative;
+      display: block;
+      height: 300px;
+
+      &-name {
+        font: var(--txt-600-24-ff);
+        color: var(--c-text-white);
+        position: absolute;
+        display: inline-block;
+        white-space: nowrap;
+        bottom: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &-btn {
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        font: var(--txt-900-14-ff);
+        text-transform: uppercase;
+        color: var(--c-text-white);
+        padding: 20px 50px;
         border: 2px solid var(--c-color-border);
         border-radius: 5px;
         background: var(--c-background-btn);

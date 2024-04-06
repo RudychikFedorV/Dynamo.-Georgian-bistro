@@ -9,6 +9,9 @@
     font: var(--txt-900-48-ff);
     color: var(--c-text-white);
     margin-bottom: 25px;
+    @include mobile {
+      font: var(--txt-900-28-ff);
+    }
   }
   &-txt {
     max-width: 632px;
@@ -21,9 +24,16 @@
   &-layer {
     position: absolute;
     top: -115px;
-    left: 25px;
+    left: 10px;
     max-width: 258px;
     max-height: 223px;
+    @include tablet-small {
+      max-width: 208px;
+      max-height: 183px;
+    }
+    @include mobile {
+      display: none;
+    }
   }
   &-sections {
     display: grid;

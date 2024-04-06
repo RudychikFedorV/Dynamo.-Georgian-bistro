@@ -1,14 +1,19 @@
 .menu {
-  // background: url(../img/white-black.png);
   background: var(--c-text-black);
   padding-top: 50px;
   padding-bottom: 140px;
+  @include mobile {
+    padding-bottom: 50px;
+  }
 
   &-title {
     text-align: center;
     font: var(--txt-900-48-ff);
     color: var(--c-text-white);
     margin-bottom: 25px;
+    @include mobile {
+      font: var(--txt-900-28-ff);
+    }
   }
   &-txt {
     max-width: 580px;

@@ -122,9 +122,10 @@
     }
     @include mobile {
       font: var(--txt-900-37-ff);
+      text-align: center;
     }
     @include mobile-small {
-      font: var(--txt-900-30-ff);
+      font: var(--txt-900-32-ff);
     }
   }
   &-info {
@@ -132,6 +133,9 @@
     font: var(--txt-400-16-ff);
     color: var(--c-text-white);
     margin-bottom: 35px;
+    @include mobile {
+      text-align: center;
+    }
   }
   &-btn {
     display: inline-block;
